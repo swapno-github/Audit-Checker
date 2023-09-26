@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audit Manager | Details</title>
+  <link rel="stylesheet" href="output.css" />
+  <link rel="icon" type="image/x-icon" href="/src/tab_icon.png" />
+  <link
+   rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+ </head>
+
+ <body onload="">
+  <!-- Navbar content goes here -->
+  <header
+   class="bg-customColor2 text-customColor1 body-font py-1 md:sticky md:top-0 md:z-50">
+   <div
+    class="container mx-auto flex flex-wrap px-5 py-2 flex-col md:flex-row items-center">
+    <a
+     href="Dashboard client side.html"
+     class="flex title-font font-medium items-center text-customColor1 mb-2 md:mb-0">
+     <img
+      src="/src/tab_icon.png"
+      class="h-10 text-white p-2 object-cover"
+      alt="logo" />
+     <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+
+     <span class="text-xl">Audit Manager</span>
+    </a>
+    <nav
+     class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+     <!-- <a href="index.html"
+          class="max-sm:mb-4 text-white px-2 border border-customColor1 rounded hover:text-customColor1">Click to place
+          a new Audit request</a> -->
+    </nav>
+    <div class="dropdown inline-block relative items-center group">
+     <button
+      class="bg-customColor3 text-customColor1 font-semibold py-2 px-8 rounded-md border-2 border-customColor1 inline-flex items-center w-full">
+      <span class="w-full">Profile</span>
+     </button>
+     <ul
+      class="dropdown-content absolute hidden text-white pt-1 group-hover:block z-10 w-full">
+      <li>
+       <a
+        class="bg-customColor3 hover:bg-customColor1 py-2 px-6 block whitespace-no-wrap"
+        href="Profile page.html"
+        >Profile</a
+       >
+      </li>
+      <li>
+       <a
+        id="logout-link"
+        class="rounded-b bg-customColor3 hover:bg-customColor1 py-2 px-5 block whitespace-no-wrap"
+        href="login.html"
+        >Log Out</a
+       >
+      </li>
+     </ul>
+    </div>
+   </div>
+  </header>
+
+  <!-- Page Content goes here -->
+  <section class="text-gray-600 body-font">
+   <div class="container flex flex-wrap px-5 py-10 mx-auto">
+    <!-- left container  -->
+    <div
+     class="md:w-1/2 md:pr-12 md:pb-8 border-r-0 md:border-r border-b md:border-b-0 border-gray-200 mt-4">
+     <!-- Department / Organization Details -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="font-bold uppercase block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Application / Audit Details
+      </label>
+     </div>
+     <!-- Name Of Application  -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Name Of Application :<span
+        class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >Twitter</span
+       >
+      </label>
+     </div>
+     <!-- Brief Application Description  -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Application Description :<span
+        class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >Lorem ipsum dolor sit amet consectetur ad</span
+       >
+      </label>
+     </div>
+
+     <!-- Staging/Temporary URL  -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Staging/Temporary URL :<span
+        class="block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >https://example.com/users/</span
+       >
+      </label>
+     </div>
+
+     <!-- Production URL -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Production URL :<span
+        class="block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >https://example.com/users/</span
+       >
+      </label>
+     </div>
+
+     <!-- Operating System -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Operating System :<span
+        class="block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >Windows</span
+       >
+      </label>
+     </div>
+
+     <!-- Web/Application Server with version -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Web/Application Server with version :<span
+        class="block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >NodeJs</span
+       >
+      </label>
+     </div>
+
+     <!-- Database at backend -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Database at backend :<span
+        class="block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >MongoDB</span
+       >
+      </label>
+     </div>
+
+     <!-- Total Size of the Website -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Total Size of the Website :<span
+        class="block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >569 MB</span
+       >
+      </label>
+     </div>
+
+     <!-- Total no. of form fields -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Total no. of form fields :<span
+        class="block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >25</span
+       >
+      </label>
+     </div>
+
+     <!-- Audit Type -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Audit Type :<span
+        class="block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >WASA - Dynamic Application (1 - 25 fields)</span
+       >
+      </label>
+     </div>
+
+     <!-- Extra Add Ons -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Extra Add Ons :<span
+        class="block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >Vulnerability Assessment of a Physical Server</span
+       >
+      </label>
+     </div>
+
+     <!-- Other Information -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Other Information :<span
+        class="block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima ut
+        beatae similique, delectus quo voluptate!</span
+       >
+      </label>
+     </div>
+    </div>
+
+    <!-- right container -->
+    <div class="flex flex-col w-full md:w-1/2 md:pl-12 mt-4">
+     <!-- Department / Organization Details -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="font-bold uppercase block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Department / Organization Details
+      </label>
+     </div>
+     <!-- Name  -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Name :<span
+        class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >IT Department</span
+       >
+      </label>
+     </div>
+     <!-- Address Line  -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Address Line :<span
+        class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >Webel Bhavan, Block : EP & GP, Sector V, Bidhannagar</span
+       >
+      </label>
+     </div>
+
+     <!-- City  -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       City :<span
+        class="block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >Barasat</span
+       >
+      </label>
+     </div>
+
+     <!-- State -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       State :<span
+        class="block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >West Bengal</span
+       >
+      </label>
+     </div>
+
+     <!-- Zip  -->
+     <div class="md:w-full px-3 mb-2 border-b-2 pb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Zip :<span
+        class="block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >7000126</span
+       >
+      </label>
+     </div>
+
+     <!-- Details of the contact person (For Administritive purpose)  -->
+     <div class="md:w-full px-3 my-2">
+      <label
+       class="font-bold uppercase items-center block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Details of the contact person (For Administritive purpose)
+      </label>
+     </div>
+     <!-- NAME  -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Name :<span
+        class="block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >Swapnodip Das</span
+       >
+      </label>
+     </div>
+
+     <!-- Email  -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Email :<span
+        class="block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >example@gmail.com</span
+       >
+      </label>
+     </div>
+
+     <!-- Designation  -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Designation :<span
+        class="block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >Manager</span
+       >
+      </label>
+     </div>
+
+     <!-- Mobile Number -->
+     <div class="md:w-full px-3 mb-2 border-b-2 pb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Mobile Number :<span
+        class="block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >XXX-XXX-XXXX</span
+       >
+      </label>
+     </div>
+
+     <!-- DETAILS OF THE CONTACT PERSON / DEVELOPMENT TEAM (FOR TECHINACAL ASPECTS) -->
+     <div class="md:w-full px-3 my-2">
+      <label
+       class="font-bold items-center block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       DETAILS OF THE CONTACT PERSON / DEVELOPMENT TEAM (FOR TECHINACAL ASPECTS)
+      </label>
+     </div>
+     <!-- NAME  -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Name :<span
+        class="block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >Swapnodip Das</span
+       >
+      </label>
+     </div>
+
+     <!-- Email  -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Email :<span
+        class="inline-flex flex-wrap tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >example@gmail.com</span
+       >
+      </label>
+     </div>
+
+     <!-- Designation  -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Designation :<span
+        class="block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >Manager</span
+       >
+      </label>
+     </div>
+
+     <!-- Mobile Number -->
+     <div class="md:w-full px-3 mb-2">
+      <label
+       class="flex items-center tracking-wide text-grey-darker text-sm mb-1 text-customColor1"
+       for="grid-first-name">
+       Mobile Number :<span
+        class="block md:flex tracking-wide text-grey-darker text-sm mb-1 text-customColor2 mt-1 md:mt-0 ml-3"
+        >XXX-XXX-XXXX</span
+       >
+      </label>
+     </div>
+
+
+    </div>
+   </div>
+  </section>
+ </body>
+</html>

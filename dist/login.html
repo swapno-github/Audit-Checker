@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audit Manager | Login</title>
+  <link rel="stylesheet" href="output.css" />
+  <link rel="icon" type="image/x-icon" href="/src/tab_icon.png" />
+ </head>
+
+ <body onload="">
+  <!-- Navbar content goes here -->
+  <header
+   class="bg-customColor2 text-customColor1 body-font py-1 md:sticky md:top-0 md:z-50">
+   <div
+    class="container mx-auto flex flex-wrap px-5 py-2 flex-col md:flex-row items-center justify-between">
+    <a
+     href="#"
+     class="flex title-font font-medium items-center text-customColor1 mb-4 md:mb-0">
+     <img
+      src="/src/tab_icon.png"
+      class="h-10 text-white p-2 object-cover"
+      alt="logo" />
+     <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+     <span class="text-xl">Audit Manager</span>
+    </a>
+    <div class="dropdown inline-block relative items-center group">
+     <button
+      class="bg-customColor3 text-customColor1 font-semibold py-2 px-8 rounded-md border-2 border-customColor1 inline-flex items-center w-full">
+      <span class="w-full">Profile</span>
+     </button>
+     <ul
+      class="dropdown-content absolute hidden text-white pt-1 group-hover:block z-10 w-full">
+      <!-- <li>
+       <a
+        class="bg-customColor3 hover:bg-customColor1 py-2 px-6 block whitespace-no-wrap"
+        href="Profile page.html"
+        >Profile</a
+       >
+      </li>
+      <li>
+       <a
+        id="logout-link"
+        class="rounded-b bg-customColor3 hover:bg-customColor1 py-2 px-5 block whitespace-no-wrap"
+        href="login.html"
+        >Log Out</a
+       >
+      </li> -->
+     </ul>
+    </div>
+   </div>
+  </header>
+
+  <!-- loginpage -->
+
+  <div
+   class="flex justify-center items-center gradient-form h-screen bg-white w-full">
+   <div
+    class="container h-full max-sm:hidden"
+    style="
+     background-image: url(/src/webel_bg.webp);
+     background-size: cover;
+     background-position: center;
+    "></div>
+   <div class="container h-full">
+    <div
+     class="g-6 flex h-full flex-wrap items-center justify-center text-customColor1">
+     <div class="w-full">
+      <div class="block">
+       <div class="g-0 lg:flex lg:flex-wrap justify-center">
+        <!-- Left column container-->
+        <div class="px-4 md:px-0 lg:w-6/12">
+         <!--Logo-->
+         <div class="text-center">
+          <!-- <img
+           class="mx-auto w-48 mb-6"
+           src="/src/Webel_logo_inverted.webp"
+           alt="logo" /> -->
+          <h4 class="mb-2 md:mb-4 mt-1 pb-1 text-2xl md:text-3xl font-semibold">
+           Welcome to Audit Manager
+          </h4>
+         </div>
+
+         <form>
+          <p class="mb-4 text-center">Login to your account</p>
+          <!--Username input-->
+          <div
+           class="relative mt-2 mb-4"
+           data-te-input-wrapper-init
+           id="inputfield">
+           <input
+            type="text"
+            required
+            class="peer block min-h-[auto] w-full rounded border-2 border-current bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none"
+            id="username"
+            placeholder="Username" />
+           <label
+            for="username"
+            class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500">
+           </label>
+          </div>
+
+          <!--Password input-->
+          <div class="relative mb-4" data-te-input-wrapper-init id="inputfield">
+           <input
+            type="password"
+            required
+            class="peer block min-h-[auto] w-full rounded border-2 border-current bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none"
+            id="password"
+            placeholder="Password" />
+           <label
+            for="password"
+            class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500">
+           </label>
+          </div>
+
+          <!--Submit button-->
+          <div class="text-center my-4 text-customColor1">
+           <a
+            href="Dashboard client side.html"
+            type="button"
+            class="px-6 mx-2 py-1 rounded-md border-2 border-cus"
+            id="login-btn"
+            >Login</a
+           >
+          </div>
+
+          <!-- Forgot password link
+          <a href="forgotpassword.html">Forgot password?</a> -->
+
+          <!--Register button-->
+          <div class="flex items-center justify-between pb-6">
+           <a href="signup.html" class="mb-0 mr-2">Don't have an account?</a>
+           <a
+            href="signup.html"
+            type="button"
+            class="inline-block rounded border-2 border-danger px-6 pb-[6px] pt-2 text-xs font-medium uppercase leading-normal text-danger transition duration-150 ease-in-out hover:border-danger-600 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-danger-600 focus:border-danger-600 focus:text-danger-600 focus:outline-none focus:ring-0 active:border-danger-700 active:text-danger-700 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+            data-te-ripple-init
+            data-te-ripple-color="light">
+            Sign Up
+           </a>
+          </div>
+         </form>
+        </div>
+       </div>
+
+       <!-- Bottom column container with background and description-->
+       <div class="flex justify-center items-center flex-wrap">
+        <div
+         class="flex justify-center items-center lg:rounded-lg lg:w-full max-w-[768px]"
+         style="
+          background: linear-gradient(
+           to right,
+           #507dbc,
+           #507dbc,
+           #507dbc,
+           #507dbc
+          );
+         ">
+         <div class="px-4 py-6 text-white md:mx-6 md:p-12">
+          <h4 class="mb-6 text-xl font-semibold">
+           We are more than just a company
+          </h4>
+          <p class="text-sm">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+           ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+           aliquip ex ea commodo consequat.
+          </p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- <background-image
+   class="h-[100vh] w-full fill-transparent z-0"
+   src="/src/webel_bg.jpg"
+   id="background"
+   alt="" /> -->
+
+  <script src="index.js"></script>
+ </body>
+</html>

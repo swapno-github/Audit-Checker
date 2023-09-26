@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audit Manager | WASA</title>
+  <link rel="stylesheet" href="output.css" />
+  <link rel="icon" type="image/x-icon" href="/src/tab_icon.png" />
+ </head>
+
+ <body class="bg-white">
+  <!-- navbar-section  -->
+  <header
+   class="bg-customColor2 text-customColor1 body-font py-1 md:sticky md:top-0 md:z-50">
+   <div
+    class="container mx-auto flex flex-wrap px-5 py-2 flex-col md:flex-row items-center justify-between">
+    <a
+     href="index.html"
+     class="flex title-font font-medium items-center text-customColor1 mb-4 md:mb-0">
+     <img
+      src="/src/tab_icon.png"
+      class="h-10 text-white p-2 object-cover"
+      alt="logo" />
+     <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+     <span class="text-xl">Audit Manager</span>
+    </a>
+    <div class="dropdown inline-block relative items-center group">
+     <button
+      class="bg-customColor3 text-customColor1 font-semibold py-2 px-8 rounded-md border-2 border-customColor1 inline-flex items-center w-full">
+      <span class="w-full">Profile</span>
+     </button>
+     <ul
+      class="dropdown-content absolute hidden text-white pt-1 group-hover:block z-10 w-full">
+      <li>
+       <a
+        class="bg-customColor3 hover:bg-customColor1 py-2 px-6 block whitespace-no-wrap"
+        href="Profile page.html"
+        >Profile</a
+       >
+      </li>
+      <li>
+       <a
+        id="logout-link"
+        class="rounded-b bg-customColor3 hover:bg-customColor1 py-2 px-5 block whitespace-no-wrap"
+        href="login.html"
+        >Log Out</a
+       >
+      </li>
+     </ul>
+    </div>
+   </div>
+  </header>
+
+  <!-- form  -->
+  <div class="flex justify-center">
+   <!-- component -->
+   <div
+    class="text-customColor1 rounded px-8 pt-6 pb-8 w-full md:w-2/3 lg:w-1/2">
+    <p
+     class="block uppercase tracking-wide text-grey-darker text-xl font-bold pt-1 mb-6 text-center">
+     Web Application Security Analyzer(WASA)
+    </p>
+    <!-- Department name  -->
+    <div class="-mx-3 md:flex mb-4">
+     <div class="md:w-full px-3">
+      <label
+       class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+       for="grid-first-name">
+       Department / Organization Name
+      </label>
+      <input
+       class="appearance-none block w-full text-grey-darker border rounded py-3 px-4 mb-3"
+       id="grid-first-name"
+       type="text"
+       placeholder="Name" />
+      <p class="text-red text-xs italic">Please fill out this field.</p>
+     </div>
+    </div>
+
+    <!-- <div class="-mx-3 md:flex mb-4">
+     <div class="md:w-full px-3">
+      <label
+       class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+       for="head_person_name">
+       Department Head Person Name
+      </label>
+      <input
+       class="appearance-none block w-full text-grey-darker border rounded py-3 px-4 mb-3"
+       id="head_person_name"
+       type="text"
+       placeholder="Name" />
+      <p class="text-red text-xs italic">Please fill out this field.</p>
+     </div>
+    </div> -->
+
+    <div class="-mx-3 md:flex mb-4">
+     <!-- address  -->
+     <div class="md:w-full px-3">
+      <label
+       class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+       for="grid-name">
+       Address Line
+      </label>
+      <input
+       class="appearance-none block w-full text-grey-darker border rounded py-3 px-4 mb-3"
+       id="grid-name"
+       type="text"
+       placeholder="Address" />
+      <p class="text-grey-dark text-xs italic">
+       Write your full address here...
+      </p>
+     </div>
+    </div>
+    <!-- city  -->
+    <div class="-mx-3 md:flex mb-2">
+     <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+      <label
+       class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+       for="grid-city">
+       City
+      </label>
+      <input
+       class="appearance-none block w-full text-grey-darker border rounded py-3 px-4"
+       id="grid-city"
+       type="text"
+       placeholder="City name" />
+     </div>
+     <!-- state  -->
+     <div class="md:w-1/2 px-3">
+      <label
+       class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+       for="grid-state">
+       State
+      </label>
+      <div class="relative">
+       <select
+        class="block appearance-none w-full border py-3 px-4 pr-8 rounded mb-2 text-gray-500"
+        id="grid-state">
+        <option>Andhra Pradesh</option>
+        <option>Arunachal Pradeshi</option>
+        <option>Assam</option>
+        <option>Bihar</option>
+        <option>Chhattisgarh</option>
+        <option>Goa</option>
+        <option>Gujrat</option>
+        <option>Haryana</option>
+        <option>Himachal Pradesh</option>
+        <option>Jharkand</option>
+        <option>Karnataka</option>
+        <option>Kerala</option>
+        <option>Madhya Pradesh</option>
+        <option>Maharashtra</option>
+        <option>Manipur</option>
+        <option>Meghalaya</option>
+        <option>Mizoram</option>
+        <option>Nagaland</option>
+        <option>Odisha</option>
+        <option>Punjab</option>
+        <option>Rajasthan</option>
+        <option>Sikham</option>
+        <option>Tamil Nadu</option>
+        <option>Telangana</option>
+        <option>Tripura</option>
+        <option>Uttar Pradesh</option>
+        <option>Uttarakhand</option>
+        <option>West Bengal</option>
+       </select>
+       <div
+        class="pointer-events-none absolute pin-y pin-r flex items-center px-2 text-grey-darker">
+        <svg
+         class="h-4 w-4"
+         xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 20 20">
+         <!-- <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/> -->
+        </svg>
+       </div>
+      </div>
+     </div>
+     <!-- zip  -->
+     <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+      <label
+       class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+       for="grid-zip">
+       Zip
+      </label>
+      <input
+       class="appearance-none block w-full text-grey-darker border rounded py-3 px-4"
+       id="grid-zip"
+       type="text"
+       placeholder="000000" />
+     </div>
+    </div>
+
+    <div class="mt-6 -mx-3 md:flex mb-4">
+     <div class="md:w-full px-3">
+      <label
+       class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+       for="grid-second-name">
+       Details of the contact person (For Administritive purpose)
+      </label>
+      <input
+       class="appearance-none block w-full text-grey-darker border rounded py-3 px-4 mb-3"
+       id="grid-second-name"
+       type="text"
+       placeholder="Name" />
+      <p class="text-red text-xs italic">Please fill out this field.</p>
+     </div>
+    </div>
+    <div class="mt-6 -mx-3 md:flex mb-4">
+     <div class="md:w-full px-3">
+      <label
+       class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+       for="grid-first-email">
+       Email
+      </label>
+      <input
+       class="appearance-none block w-full text-grey-darker border rounded py-3 px-4 mb-3"
+       id="grid-first-email"
+       type="email"
+       placeholder="Enter your email..." />
+      <!-- <p class="text-red text-xs italic">Please fill out this field.</p> -->
+     </div>
+    </div>
+    <div class="-mx-3 md:flex mb-4">
+     <div class="md:w-1/2 px-3">
+      <label
+       class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+       for="grid-first-designation">
+       Designation
+      </label>
+      <input
+       class="appearance-none block w-full text-grey-darker border rounded py-3 px-4 mb-3"
+       id="grid-first-designation"
+       type="text"
+       placeholder="Designation" />
+      <!-- <p class="text-red text-xs italic">Please fill out this field.</p> -->
+     </div>
+     <div class="md:w-1/2 px-3">
+      <label
+       class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+       for="grid-number">
+       Mobile Number
+      </label>
+      <input
+       class="appearance-none block w-full text-grey-darker border rounded py-3 px-4"
+       id="grid-number"
+       type="number"
+       placeholder="XXX-XXX-XXXX" />
+     </div>
+    </div>
+    <div class="mt-6 -mx-3 md:flex mb-4">
+     <div class="md:w-full px-3">
+      <label
+       class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+       for="grid-third-name">
+       Details of the contact person / Development Team (For Techinacal aspects)
+      </label>
+      <input
+       class="appearance-none block w-full text-grey-darker border rounded py-3 px-4 mb-3"
+       id="grid-third-name"
+       type="text"
+       placeholder="Name" />
+      <p class="text-red text-xs italic">Please fill out this field.</p>
+     </div>
+    </div>
+    <div class="mt-6 -mx-3 md:flex mb-4">
+     <div class="md:w-full px-3">
+      <label
+       class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+       for="grid-second-email">
+       Email
+      </label>
+      <input
+       class="appearance-none block w-full text-grey-darker border rounded py-3 px-4 mb-3"
+       id="grid-second-email"
+       type="email"
+       placeholder="Enter your email..." />
+      <!-- <p class="text-red text-xs italic">Please fill out this field.</p> -->
+     </div>
+    </div>
+    <div class="-mx-3 md:flex mb-4">
+     <div class="md:w-1/2 px-3">
+      <label
+       class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+       for="grid-second-designation">
+       Designation
+      </label>
+      <input
+       class="appearance-none block w-full text-grey-darker border rounded py-3 px-4 mb-3"
+       id="grid-second-designation"
+       type="text"
+       placeholder="Designation" />
+      <!-- <p class="text-red text-xs italic">Please fill out this field.</p> -->
+     </div>
+     <div class="md:w-1/2 px-3">
+      <label
+       class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+       for="grid-second-number">
+       Mobile Number
+      </label>
+      <input
+       class="appearance-none block w-full text-grey-darker border rounded py-3 px-4"
+       id="grid-second-number"
+       type="number"
+       placeholder="XXX-XXX-XXXX" />
+     </div>
+    </div>
+
+    <div class="mt-6 -mx-3 md:flex mb-4">
+     <div class="md:w-full px-3">
+      <label
+       class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+       for="grid-forth-name">
+       name of the application to be audited (If any)
+      </label>
+      <input
+       class="appearance-none block w-full text-grey-darker border rounded py-3 px-4 mb-3"
+       id="grid-forth-name"
+       type="text"
+       placeholder="Name" />
+      <p class="text-red text-xs italic">Please fill out this field.</p>
+     </div>
+    </div>
+
+    <div class="mt-6 -mx-3 md:flex mb-4">
+     <div class="md:w-full px-3">
+      <label
+       class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+       for="exampleFormControlTextarea1">
+       brief Application description
+      </label>
+      <textarea
+       id="exampleFormControlTextarea1"
+       rows="3"
+       placeholder="Enter your Application details..."
+       class="mt-1 py-2 px-4 block w-full text-grey-darker rounded-md border"></textarea>
+      <!-- <p class="text-red text-xs italic">Please fill out this field.</p> -->
+      <div class="mt-6 -mx-3 md:flex mb-4">
+       <div class="md:w-full px-3">
+        <label
+         class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+         for="grid-first-url">
+         Staging/Temporary URL
+        </label>
+        <input
+         class="appearance-none block w-full text-grey-darker border rounded py-3 px-4 mb-3"
+         id="grid-first-url"
+         type="text"
+         placeholder="https://example.com/users/
+                            " />
+       </div>
+      </div>
+      <div class="mt-6 -mx-3 md:flex mb-4">
+       <div class="md:w-full px-3">
+        <label
+         class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+         for="grid-second-url">
+         Production URL
+        </label>
+        <input
+         class="appearance-none block w-full text-grey-darker border rounded py-3 px-4 mb-3"
+         id="grid-second-url"
+         type="text"
+         placeholder="https://example.com/users/" />
+       </div>
+      </div>
+
+      <div class="-mx-3 md:flex mb-4">
+       <div class="md:w-1/3 px-3">
+        <label
+         class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+         for="grid-os">
+         Operating System
+        </label>
+        <input
+         class="appearance-none block w-full text-grey-darker border rounded py-3 px-4 mb-4"
+         id="grid-os"
+         type="text"
+         placeholder="(e.g . Linux, Windows2003, AIX, Solaris etc)" />
+       </div>
+       <div class="md:w-1/3 px-3 mb-4">
+        <label
+         class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+         for="grid-web-server">
+         Web/Application Server with version
+        </label>
+        <input
+         class="appearance-none block w-full text-grey-darker border rounded py-3 px-4"
+         id="grid-web-server"
+         type="text"
+         placeholder="(e.g. IIS 5.0, Apache, Tomcat etc)" />
+       </div>
+       <div class="md:w-1/3 px-3 mb-4">
+        <label
+         class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+         for="grid-backend">
+         Database at backend
+        </label>
+        <input
+         class="appearance-none block w-full text-grey-darker border rounded py-3 px-4"
+         id="grid-backend"
+         type="text"
+         placeholder="(Oracle, MS SQL, MySQL etc)" />
+       </div>
+      </div>
+
+      <div class="-mx-3 md:flex mb-4">
+       <div class="md:w-1/2 px-3">
+        <label
+         class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+         for="grid-size">
+         Total Size of the Website
+        </label>
+        <input
+         class="appearance-none block w-full text-grey-darker border rounded py-3 px-4 mb-3"
+         id="grid-size"
+         type="number"
+         placeholder="MB or in No. of pages" />
+        <!-- <p class="text-red text-xs italic">Please fill out this field.</p> -->
+       </div>
+       <div class="md:w-1/2 px-3">
+        <label
+         class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+         for="grid-form-field">
+         Total no. of form fields availabe for user input
+        </label>
+        <input
+         class="appearance-none block w-full text-grey-darker border rounded py-3 px-4"
+         id="grid-form-field"
+         type="number"
+         placeholder="(0-25, 25-50, 50-100...)" />
+        <p class="text-red text-xs italic pt-2">Please fill out this field.</p>
+       </div>
+      </div>
+
+      <label
+       class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+       for="exampleFormControlTextarea2">
+       Price details of all the Audit Types and ADD-ONS
+      </label>
+      <embed
+       src="/src/WASA.pdf"
+       class="mb-8 border border-customColor2 rounded-lg"
+       width="100%"
+       height="500"
+       type="application/pdf" />
+      <div class="md:w-full">
+       <label
+        class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+        for="grid-item-description">
+        Click here to select Audit Type
+       </label>
+       <div class="relative">
+        <select
+         class="block appearance-none w-full border py-3 px-4 pr-8 rounded mb-8 text-gray-500"
+         id="grid-item-description">
+         <option class="max-sm:text-xs">WASA - Static Application</option>
+         <option class="max-sm:text-xs">
+          WASA - Dynamic Application (1 - 25 fields)
+         </option>
+         <option class="max-sm:text-xs">
+          WASA - Dynamic Application (26 - 100 fields)
+         </option>
+         <option class="max-sm:text-xs">
+          WASA - Dynamic Application (101 - 200 fields)
+         </option>
+         <option class="max-sm:text-xs">
+          WASA - Dynamic Application (More than 200 fields)
+         </option>
+         <option class="max-sm:text-xs">
+          WASA for 1 year (Audit will be done every quater. No field count
+          limitation)
+         </option>
+        </select>
+       </div>
+      </div>
+
+      <!-- checkboxes  -->
+      <div class="flex flex-col justify-center items-start mb-8">
+       <p class="mb-2 text-xs font-bold">EXTRA ADD-ONS</p>
+       <ul class="w-full text-sm font-medium text-gray-900 bg-white rounded-lg">
+        <li class="w-full border-gray-200 rounded-t-lg">
+         <div class="flex items-center pl-3">
+          <input
+           id="vue-checkbox"
+           type="checkbox"
+           value=""
+           class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500" />
+          <label
+           for="vue-checkbox"
+           class="w-auto py-3 ml-2 text-sm font-medium text-gray-900"
+           >Vulnerability Assessment of a Physical Server</label
+          >
+         </div>
+        </li>
+        <li class="w-auto border-gray-200 rounded-t-lg dark:border-gray-600">
+         <div class="flex items-center pl-3">
+          <input
+           id="react-checkbox"
+           type="checkbox"
+           value=""
+           class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500" />
+          <label
+           for="react-checkbox"
+           class="w-auto py-3 ml-2 text-sm font-medium text-gray-900"
+           >Vulnerability Assessment of a Virtual Server</label
+          >
+         </div>
+        </li>
+        <li class="w-auto border-gray-200 rounded-t-lg">
+         <div class="flex items-center pl-3">
+          <input
+           id="angular-checkbox"
+           type="checkbox"
+           value=""
+           class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500" />
+          <label
+           for="angular-checkbox"
+           class="w-auto py-3 ml-2 text-sm font-medium text-gray-900"
+           >Penetration Testing of a Physical Server</label
+          >
+         </div>
+        </li>
+        <li class="w-auto border-gray-200 rounded-t-lg">
+         <div class="flex items-center pl-3">
+          <input
+           id="laravel-checkbox"
+           type="checkbox"
+           value=""
+           class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500" />
+          <label
+           for="laravel-checkbox"
+           class="w-auto py-3 ml-2 text-sm font-medium text-gray-900"
+           >Penetration Testing of a Virtual Server</label
+          >
+         </div>
+        </li>
+       </ul>
+      </div>
+
+      <!-- other info  -->
+      <label
+       class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
+       for="grid-first-name">
+       any other information
+      </label>
+      <textarea
+       id="exampleFormControlTextarea1"
+       rows="3"
+       placeholder="Anything you want to say..."
+       class="mt-1 py-2 px-4 block w-full text-grey-darker rounded-md border"></textarea>
+     </div>
+    </div>
+    <!-- end-of-form  -->
+
+    <div class="flex items-center">
+     <input
+      type="checkbox"
+      class="h-4 w-4 text-customColor1 rounded"
+      id="invalidCheck"
+      required
+      checked />
+     <label for="invalidCheck" class="ml-2 block text-sm">
+      Agree to terms and conditions
+     </label>
+    </div>
+    <div class="text-center mt-4 text-customColor1">
+     <a
+      href="workorder.html"
+      type="button"
+      class="px-6 mx-2 py-1 rounded-md border-2"
+      >Submit</a
+     >
+    </div>
+   </div>
+  </div>
+  <!-- all scripts here  -->
+  <script src="index.js"></script>
+ </body>
+</html>

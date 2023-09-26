@@ -1,0 +1,12 @@
+
+customColor1: '#507DBC', //drak blue  //alternate color ( Sea Green ) = #35A29F 
+customColor2: 'rgb(32,31,31)', //darkgray
+customColor3: '#252525',  //lightgray
+customColor4: '#BBD1EA', //superlightblue
+
+// DefaultColors
+| label-black | bg-white-| focus: ring/border-default-Blue
+
+// Not Used 
+richBlack #04080F
+lightBlue #A1C6EA
