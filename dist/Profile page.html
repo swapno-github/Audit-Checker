@@ -1,112 +1,114 @@
 <!doctype html>
 <html lang="en">
- <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Audit Manager | Profile</title>
-  <link rel="stylesheet" href="output.css" />
-  <link rel="icon" type="image/x-icon" href="/src/tab_icon.png" />
-  <link
-   rel="stylesheet"
-   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
- </head>
 
- <body class="h-screen">
-  <!-- Navbar content goes here -->
-  <header class="bg-customColor2 text-customColor1 body-font py-1 md:sticky md:top-0 md:z-50">
-    <div class="container mx-auto flex flex-wrap px-5 py-2 flex-col md:flex-row items-center justify-between">
-      <a href="Dashboard client side.html" class="flex title-font font-medium items-center text-customColor1 mb-4 md:mb-0">
-        <img src="/src/tab_icon.png" class="h-10 text-white p-2 object-cover" alt="logo" />
-        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-        <span class="text-xl">Audit Manager</span>
-      </a>
-      <div class="dropdown inline-block relative items-center group">
-        <button
-         class="bg-customColor3 text-customColor1 font-semibold py-2 px-8 rounded-md border-2 border-customColor1 inline-flex items-center w-full">
-         <span class="w-full">Profile</span>
-        </button>
-        <ul
-         class="dropdown-content absolute hidden text-white pt-1 group-hover:block z-10 w-full">
-         <li>
-           <a
-            class="bg-customColor3 hover:bg-customColor1 py-2 px-6 block whitespace-no-wrap"
-            href="Profile page.html"
-            >Profile</a
-           >
-          </li>
-          <li>
-           <a
-            id="logout-link"
-            class="rounded-b bg-customColor3 hover:bg-customColor1 py-2 px-5 block whitespace-no-wrap"
-            href="login.html"
-            >Log Out</a
-           >
-          </li>
-        </ul>
-       </div>
-    </div>
-  </header>
-  
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audit Manager | Profile</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="icon" type="image/x-icon" href="/src/tab_icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
 
-  <!-- profilepage -->
-<section class="md:h-screen flex justify-center items-center md:bg-gray-100/50 max-sm:pt-5 max-sm:mt-5">
-  <form class="container max-w-2xl mx-auto shadow-md md:w-3/4 border rounded-lg">
-      <div class="p-4 rounded-lg bg-gray-100/5 bg-customColor4">
-          <div class="max-w-sm mx-auto md:w-full md:mx-0">
-              <div class="inline-flex items-center space-x-4">
-                  <h1 class="text-gray-600 text-xl">
-                      Swapnodip Das
-                  </h1>
-              </div>
-          </div>
-      </div>
-      <div class="space-y-6 bg-white">
-         <div class="items-center w-full p-4 space-y-4 text-gray-500 md:inline-flex md:space-y-0">
-             <h2 class="max-w-sm mx-auto md:w-1/3">
-                 Personal info
-             </h2>
-             <div class="max-w-sm mx-auto space-y-5 md:w-2/3">
-                 <div>
-                    <div class=" relative ">
-                        <input type="text" id="user-info-name" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-md text-base focus:outline-none focus:ring-2" placeholder="Name"/>
-                        </div>
+<body class="h-screen">
+    <!-- Navbar content goes here -->
+    <header class="bg-customColor2 text-customColor1 body-font py-1 md:sticky md:top-0 md:z-50">
+        <div class="container mx-auto flex flex-wrap px-5 py-2 flex-col md:flex-row items-center justify-between">
+            <a href="Dashboard client side.html"
+                class="flex title-font font-medium items-center text-customColor1 mb-4 md:mb-0">
+                <img src="/src/tab_icon.png" class="h-10 text-white p-2 object-cover" alt="logo" />
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                <span class="text-xl">Audit Manager</span>
+            </a>
+            <div class="dropdown inline-block relative items-center group">
+                <button
+                    class="bg-customColor3 text-customColor1 font-semibold py-2 px-8 rounded-md border-2 border-customColor1 inline-flex items-center w-full">
+                    <span class="w-full">Profile</span>
+                </button>
+                <ul class="dropdown-content absolute hidden text-white pt-1 group-hover:block z-10 w-full">
+                    <li>
+                        <a class="bg-customColor3 hover:bg-customColor1 py-2 px-6 block whitespace-no-wrap"
+                            href="Profile page.html">Profile</a>
+                    </li>
+                    <li>
+                        <a id="logout-link"
+                            class="rounded-b bg-customColor3 hover:bg-customColor1 py-2 px-5 block whitespace-no-wrap"
+                            href="login.html">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- profilepage -->
+    <section class="md:h-screen flex justify-center items-center md:bg-gray-100/50 max-sm:pt-5 max-sm:mt-5">
+        <form class="container max-w-2xl mx-auto shadow-md md:w-3/4 border rounded-lg">
+            <div class="p-4 rounded-lg bg-gray-100/5 bg-customColor4">
+                <div class="max-w-sm mx-auto md:w-full md:mx-0">
+                    <div class="inline-flex items-center space-x-4">
+                        <h1 class="text-gray-600 text-xl">
+                            Swapnodip Das
+                        </h1>
                     </div>
-                    <div>
-                        <div class=" relative ">
-                            <input type="text" id="user-info-phone" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-md text-base focus:outline-none focus:ring-2" placeholder="Phone number"/>
+                </div>
+            </div>
+            <div class="space-y-6 bg-white">
+                <div class="items-center w-full p-4 space-y-4 text-gray-500 md:inline-flex md:space-y-0">
+                    <h2 class="max-w-sm mx-auto md:w-1/3">
+                        Personal info
+                    </h2>
+                    <div class="max-w-sm mx-auto space-y-5 md:w-2/3">
+                        <div>
+                            <div class=" relative ">
+                                <input type="text" id="user-info-name"
+                                    class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-md text-base focus:outline-none focus:ring-2"
+                                    placeholder="Name" />
+                            </div>
+                        </div>
+                        <div>
+                            <div class=" relative ">
+                                <input type="text" id="user-info-phone"
+                                    class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-md text-base focus:outline-none focus:ring-2"
+                                    placeholder="Phone number" />
                             </div>
                         </div>
                     </div>
                 </div>
-                <hr/>
+                <hr />
                 <div class="items-center w-full p-8 space-y-4 text-gray-500 md:inline-flex md:space-y-0">
                     <h2 class="max-w-sm mx-auto md:w-4/12">
                         Change password
                     </h2>
                     <div class="w-full max-w-sm pl-2 mx-auto space-y-5 md:w-5/12 md:pl-9 md:inline-flex">
                         <div class=" relative ">
-                            <input type="text" id="user-info-password" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-md text-base focus:outline-none focus:ring-2" placeholder="Password"/>
-                            </div>
-                        </div>
-                        <div class="text-center md:w-3/12 md:pl-6">
-                            <button type="button" class="py-2 px-4  bg-customColor1 hover:bg-customColor4 focus:ring-customColor4 text-white hover:text-slate-800 w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
-                                Change
-                            </button>
+                            <input type="text" id="user-info-password"
+                                class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-md text-base focus:outline-none focus:ring-2"
+                                placeholder="Password" />
                         </div>
                     </div>
-                    <hr/>
-                    <div class="w-full px-4 pb-4 ml-auto text-gray-500 sm:w-1/3">
-                        <a href="Dashboard client side.html" type="submit" class="py-2 px-4  bg-customColor1 hover:bg-customColor4 hover:text-slate-800 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
-                            Save
-                        </a>
+                    <div class="text-center md:w-3/12 md:pl-6">
+                        <button type="button"
+                            class="py-2 px-4  bg-customColor1 hover:bg-customColor4 focus:ring-customColor4 text-white hover:text-slate-800 w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                            Change
+                        </button>
                     </div>
-                 </div>
-             </form>
-         </section>
+                </div>
+                <hr />
+                <div class="w-full px-4 pb-4 ml-auto text-gray-500 sm:w-1/3">
+                    <a href="Dashboard client side.html" type="submit"
+                        class="py-2 px-4  bg-customColor1 hover:bg-customColor4 hover:text-slate-800 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                        Save
+                    </a>
+                </div>
+            </div>
+        </form>
+    </section>
 
-  
-  </div>
 
-  <!-- end  -->
- </body>
+    </div>
+
+    <!-- end  -->
+</body>
+
 </html>

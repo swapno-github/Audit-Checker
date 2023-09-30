@@ -1,243 +1,191 @@
 <!doctype html>
 <html lang="en">
- <head>
+
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Audit Manager | Payment</title>
   <link rel="stylesheet" href="output.css" />
   <link rel="icon" type="image/x-icon" href="/src/tab_icon.png" />
- </head>
+</head>
 
- <body class="">
+<body class="">
   <!-- navbar-section  -->
-  <header
-   class="bg-customColor2 text-customColor1 body-font py-1 md:sticky md:top-0 md:z-50">
-   <div
-    class="container mx-auto flex flex-wrap px-5 py-2 flex-col md:flex-row items-center justify-between">
-    <a
-     href="Dashboard client side.html"
-     class="flex title-font font-medium items-center text-customColor1 mb-4 md:mb-0">
-     <img
-      src="/src/tab_icon.png"
-      class="h-10 text-white p-2 object-cover"
-      alt="logo" />
-     <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-     <span class="text-xl">Audit Manager</span>
-    </a>
-    <div class="dropdown inline-block relative items-center group">
-     <a
-     href="certificate.html"
-      class="bg-customColor3 text-customColor1 font-semibold py-2 px-8 rounded-md border-2 border-customColor1 inline-flex items-center w-full">
-      <span class="w-full">Profile</span>
-     </a>
-     <ul
-      class="dropdown-content absolute hidden text-white pt-1 group-hover:block z-10 w-full">
-      <li>
-       <a
-        class="bg-customColor3 hover:bg-customColor1 py-2 px-6 block whitespace-no-wrap"
-        href="Profile page.html"
-        >Profile</a
-       >
-      </li>
-      <li>
-       <a
-        id="logout-link"
-        class="rounded-b bg-customColor3 hover:bg-customColor1 py-2 px-5 block whitespace-no-wrap"
-        href="login.html"
-        >Log Out</a
-       >
-      </li>
-     </ul>
+  <header class="bg-customColor2 text-customColor1 body-font py-1 md:sticky md:top-0 md:z-50">
+    <div class="container mx-auto flex flex-wrap px-5 py-2 flex-col md:flex-row items-center justify-between">
+      <a href="Dashboard client side.html"
+        class="flex title-font font-medium items-center text-customColor1 mb-4 md:mb-0">
+        <img src="/src/tab_icon.png" class="h-10 text-white p-2 object-cover" alt="logo" />
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        <span class="text-xl">Audit Manager</span>
+      </a>
+      <div class="dropdown inline-block relative items-center group">
+        <a href="certificate.html"
+          class="bg-customColor3 text-customColor1 font-semibold py-2 px-8 rounded-md border-2 border-customColor1 inline-flex items-center w-full">
+          <span class="w-full">Profile</span>
+        </a>
+        <ul class="dropdown-content absolute hidden text-white pt-1 group-hover:block z-10 w-full">
+          <li>
+            <a class="bg-customColor3 hover:bg-customColor1 py-2 px-6 block whitespace-no-wrap"
+              href="Profile page.html">Profile</a>
+          </li>
+          <li>
+            <a id="logout-link"
+              class="rounded-b bg-customColor3 hover:bg-customColor1 py-2 px-5 block whitespace-no-wrap"
+              href="login.html">Log Out</a>
+          </li>
+        </ul>
+      </div>
     </div>
-   </div>
   </header>
 
   <!-- payment page -->
   <div class="flex flex-col flex-wrap md:mt-6 md:pb-8">
-   <!-- radiobuttons -->
-   <div class="flex justify-center items-center mx-4">
-    <div class="flex space-x-4 my-4">
-     <!-- Radio Button 1 -->
-     <label class="flex items-center justify-center space-x-2">
-      <input type="radio" name="radio" class="form-radio text-indigo-600" />
-      <img
-       src="/src/logos/visa.jpg"
-       alt="Image 1"
-       class="w-16 h-16 md:w-full md:h-14 md:border md:border-gray-200 md:shadow-sm rounded-md object-contain md:px-5 md:py-3" />
-     </label>
+    <!-- radiobuttons -->
+    <div class="flex justify-center items-center mx-4">
+      <div class="flex space-x-4 my-4">
+        <!-- Radio Button 1 -->
+        <label class="flex items-center justify-center space-x-2">
+          <input type="radio" name="radio" class="form-radio text-indigo-600" />
+          <img src="/src/logos/visa.jpg" alt="Image 1"
+            class="w-16 h-16 md:w-full md:h-14 md:border md:border-gray-200 md:shadow-sm rounded-md object-contain md:px-5 md:py-3" />
+        </label>
 
-     <!-- Radio Button 2 -->
-     <label class="flex items-center space-x-2">
-      <input type="radio" name="radio" class="form-radio text-indigo-600" />
-      <img
-       src="/src/logos/MasterCard.jpg"
-       alt="Image 2"
-       class="w-16 h-16 md:w-full md:h-14 md:border md:border-gray-200 md:shadow-sm rounded-md object-contain md:px-5 md:py-3" />
-     </label>
+        <!-- Radio Button 2 -->
+        <label class="flex items-center space-x-2">
+          <input type="radio" name="radio" class="form-radio text-indigo-600" />
+          <img src="/src/logos/MasterCard.jpg" alt="Image 2"
+            class="w-16 h-16 md:w-full md:h-14 md:border md:border-gray-200 md:shadow-sm rounded-md object-contain md:px-5 md:py-3" />
+        </label>
 
-     <!-- Radio Button 3 -->
-     <label class="flex items-center space-x-2">
-      <input type="radio" name="radio" class="form-radio text-indigo-600" />
-      <img
-       src="/src/logos/paytm.jpg"
-       alt="Image 3"
-       class="w-16 h-16 md:w-full md:h-14 md:border md:border-gray-200 md:shadow-sm rounded-md object-contain md:px-5 md:py-3" />
-     </label>
+        <!-- Radio Button 3 -->
+        <label class="flex items-center space-x-2">
+          <input type="radio" name="radio" class="form-radio text-indigo-600" />
+          <img src="/src/logos/paytm.jpg" alt="Image 3"
+            class="w-16 h-16 md:w-full md:h-14 md:border md:border-gray-200 md:shadow-sm rounded-md object-contain md:px-5 md:py-3" />
+        </label>
 
-     <!-- Radio Button 4 -->
-     <label class="flex items-center space-x-2">
-      <input type="radio" name="radio" class="form-radio text-indigo-600" />
-      <img
-       src="/src/logos/google-pay.jpg"
-       alt="Image 4"
-       class="w-16 h-16 md:w-full md:h-14 md:border md:border-gray-200 md:shadow-sm rounded-md object-contain md:px-5 md:py-3" />
-     </label>
+        <!-- Radio Button 4 -->
+        <label class="flex items-center space-x-2">
+          <input type="radio" name="radio" class="form-radio text-indigo-600" />
+          <img src="/src/logos/google-pay.jpg" alt="Image 4"
+            class="w-16 h-16 md:w-full md:h-14 md:border md:border-gray-200 md:shadow-sm rounded-md object-contain md:px-5 md:py-3" />
+        </label>
+      </div>
     </div>
-   </div>
-   
 
 
-      <div class="md:flex justify-center items-center w-full md:mb-4">
-        <!-- zip  -->
-        <div class="md:w-[400px] w-full px-3 mb-4 md:mb-0">
-          <label
-            class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
-            for="grid-zip">
-            Card Number
-          </label>
-          <input
-            class="appearance-none block w-full text-grey-darker border rounded py-3 px-4 mb-2"
-            id="grid-zip"
-            type="number"
-            placeholder="XXX-XXX-XXXX" />
-        </div>
 
-
-        <div class="text-white ">**********************</div>
-
-        
-        <!-- zip  -->
-        <div class="md:w-[400px] w-full px-3 mb-4 md:mb-0">
-          <label
-            class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
-            for="grid-zip">
-            Card Holder Name
-          </label>
-          <input
-            class="appearance-none block w-full text-grey-darker border rounded py-3 px-4 mb-2"
-            id="grid-zip"
-            type="text"
-            placeholder="XXXXXXXXXXX" />
-        </div>
+    <div class="md:flex justify-center items-center w-full md:mb-4">
+      <!-- zip  -->
+      <div class="md:w-[400px] w-full px-3 mb-4 md:mb-0">
+        <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-zip">
+          Card Number
+        </label>
+        <input class="appearance-none block w-full text-grey-darker border rounded py-3 px-4 mb-2" id="grid-zip"
+          type="number" placeholder="XXX-XXX-XXXX" />
       </div>
-      
+
+
+      <div class="text-white ">**********************</div>
+
+
+      <!-- zip  -->
+      <div class="md:w-[400px] w-full px-3 mb-4 md:mb-0">
+        <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-zip">
+          Card Holder Name
+        </label>
+        <input class="appearance-none block w-full text-grey-darker border rounded py-3 px-4 mb-2" id="grid-zip"
+          type="text" placeholder="XXXXXXXXXXX" />
+      </div>
+    </div>
 
 
 
-      <div class="md:flex justify-center items-center w-full md:mb-4">
-        <!-- Month  -->
-        <div class="md:w-1/6 w-full px-3 mb-6 md:mb-0">
-          <label
-            class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
-            for="expiry-month">
-            Expiry Date (Month)
-          </label>
-          <select
-            class="block appearance-none w-full text-grey-darker border rounded py-3 px-4"
-            id="expiry-month">
-            <option value="01">January</option>
-            <option value="02">February</option>
-            <option value="03">March</option>
-            <option value="04">April</option>
-            <option value="05">May</option>
-            <option value="06">June</option>
-            <option value="07">July</option>
-            <option value="08">August</option>
-            <option value="09">September</option>
-            <option value="10">October</option>
-            <option value="11">November</option>
-            <option value="12">December</option>
-          </select>
-        </div>
-        
-        <!-- year  -->
-        <div class="md:w-1/6 w-full px-3 mb-6 md:mb-0">
-          <label
-            class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
-            for="grid-year">
-            Year
-          </label>
-          <select
-            class="block appearance-none w-full text-grey-darker border rounded py-3 px-4"
-            id="grid-year">
-            
-            <option value="2023">2023</option>
-            <option value="2024">2024</option>
-            <option value="2025">2025</option>
-            <option value="2026">2026</option>
-            <option value="2027">2027</option>
-            <option value="2028">2028</option>
-            <option value="2029">2029</option>
-            <option value="2030">2030</option>
-            <option value="2031">2031</option>
-            <option value="2032">2032</option>
-            <option value="2033">2033</option>
-            <!-- Add more years as needed -->
-          </select>
-        </div>
-        
-        <!-- zip  -->
-        <div class="md:w-1/6 w-full px-3 mb-6 md:mb-0">
-         <label
-          class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2"
-          for="grid-zip">
+
+    <div class="md:flex justify-center items-center w-full md:mb-4">
+      <!-- Month  -->
+      <div class="md:w-1/6 w-full px-3 mb-6 md:mb-0">
+        <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="expiry-month">
+          Expiry Date (Month)
+        </label>
+        <select class="block appearance-none w-full text-grey-darker border rounded py-3 px-4" id="expiry-month">
+          <option value="01">January</option>
+          <option value="02">February</option>
+          <option value="03">March</option>
+          <option value="04">April</option>
+          <option value="05">May</option>
+          <option value="06">June</option>
+          <option value="07">July</option>
+          <option value="08">August</option>
+          <option value="09">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+      </div>
+
+      <!-- year  -->
+      <div class="md:w-1/6 w-full px-3 mb-6 md:mb-0">
+        <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-year">
+          Year
+        </label>
+        <select class="block appearance-none w-full text-grey-darker border rounded py-3 px-4" id="grid-year">
+
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+          <option value="2026">2026</option>
+          <option value="2027">2027</option>
+          <option value="2028">2028</option>
+          <option value="2029">2029</option>
+          <option value="2030">2030</option>
+          <option value="2031">2031</option>
+          <option value="2032">2032</option>
+          <option value="2033">2033</option>
+          <!-- Add more years as needed -->
+        </select>
+      </div>
+
+      <!-- zip  -->
+      <div class="md:w-1/6 w-full px-3 mb-6 md:mb-0">
+        <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-zip">
           CVC
-         </label>
-         <input
-          class="appearance-none block w-full text-grey-darker border rounded py-3 px-4"
-          id="grid-zip"
-          type="number"
-          placeholder="XXX" />
-        </div>
+        </label>
+        <input class="appearance-none block w-full text-grey-darker border rounded py-3 px-4" id="grid-zip"
+          type="number" placeholder="XXX" />
       </div>
+    </div>
 
-        <!-- checkbox  -->
-       <div class="flex items-center justify-center w-full">
-        <div class="flex justify-start w-auto mx-4 my-2">
-          <input
-           type="checkbox"
-           class="h-4 w-4 text-customColor1 rounded"
-           id="invalidCheck"
-           required
-           checked />
-          <label for="invalidCheck" class="ml-2 block text-sm">
-           Save my details for future payments.<span class="">All rights reserved by XYZ Company Name</span>
-          </label>
-        </div>
-       </div>
+    <!-- checkbox  -->
+    <div class="flex items-center justify-center w-full">
+      <div class="flex justify-start w-auto mx-4 my-2">
+        <input type="checkbox" class="h-4 w-4 text-customColor1 rounded" id="invalidCheck" required checked />
+        <label for="invalidCheck" class="ml-2 block text-sm">
+          Save my details for future payments.<span class="">All rights reserved by XYZ Company Name</span>
+        </label>
+      </div>
+    </div>
 
-       <!-- table  -->
-       <div class="flex justify-center items-center">
-         <div class="flex flex-col justify-center items-center w-full md:w-1/2 mx-4">
-            <div class="container mx-auto">
-             <div class="w-full">
-              <div class="max-w-full overflow-x-auto">
-               <table class="w-full table-auto">
+    <!-- table  -->
+    <div class="flex justify-center items-center">
+      <div class="flex flex-col justify-center items-center w-full md:w-1/2 mx-4">
+        <div class="container mx-auto">
+          <div class="w-full">
+            <div class="max-w-full overflow-x-auto">
+              <table class="w-full table-auto">
                 <thead>
-                 <tr class="text-center text-customColor1 border-2 border-customColor1">
-                  <th
-                   class="w-1/8 min-w-[40px] py-2 mx-2 px-2 border border-customColor1 text-xs">
-                   Sl.No
-                  </th>
-                  <th
-                   class="w-1/8 min-w-[40px] py-2 mx-2 px-2 border border-customColor1 text-xs">
-                   Item Description
-                  </th>
-                  <th
-                   class="w-1/8 min-w-[40px] py-2 mx-2 px-2 border border-customColor1 text-xs">
-                   Qty
-                  </th>
-                  <!-- <th
+                  <tr class="text-center text-customColor1 border-2 border-customColor1">
+                    <th class="w-1/8 min-w-[40px] py-2 mx-2 px-2 border border-customColor1 text-xs">
+                      Sl.No
+                    </th>
+                    <th class="w-1/8 min-w-[40px] py-2 mx-2 px-2 border border-customColor1 text-xs">
+                      Item Description
+                    </th>
+                    <th class="w-1/8 min-w-[40px] py-2 mx-2 px-2 border border-customColor1 text-xs">
+                      Qty
+                    </th>
+                    <!-- <th
                    class="w-1/8 min-w-[40px] py-2 mx-2 px-2 border border-customColor1 text-xs">
                    Base value (In INR)
                   </th>
@@ -253,13 +201,13 @@
                    class="w-1/8 min-w-[40px] py-2 mx-2 px-2 border border-customColor1 text-xs">
                    GST@18%
                   </th> -->
-                  <th class="w-1/8 min-w-[40px] py-2 mx-2  text-xs">
-                   Total value (Incl of GST)
-                  </th>
-                 </tr>
+                    <th class="w-1/8 min-w-[40px] py-2 mx-2  text-xs">
+                      Total value (Incl of GST)
+                    </th>
+                  </tr>
                 </thead>
                 <tbody class="">
-                 <!-- <tr>
+                  <!-- <tr>
                   <td
                    class="border-b border-l border-r border-customColor1 px-2 text-center text-xs"></td>
                   <td
@@ -305,21 +253,16 @@
                  </tr>
                  <tr></tr>
                  <tr> -->
-                  <td
-                   class="border-b border-l border-r border-customColor1 py-2 px-2 text-center text-sm">
-                   1
+                  <td class="border-b border-l border-r border-customColor1 py-2 px-2 text-center text-sm">
+                    1
                   </td>
-                  <td
-                   class="border-b border-r border-customColor1 py-2 px-2 text-center text-sm"
-                   id="audit-type">
-                   Web Application Security Audit- Dynamic Application(26-100 fields)
+                  <td class="border-b border-r border-customColor1 py-2 px-2 text-center text-sm" id="audit-type">
+                    Web Application Security Audit- Dynamic Application(26-100 fields)
                   </td>
-                  <td
-                   class="border-b border-r border-customColor1 py-2 px-2 text-center text-sm"
-                   id="quantity">
-                   1
+                  <td class="border-b border-r border-customColor1 py-2 px-2 text-center text-sm" id="quantity">
+                    1
                   </td>
-        
+
                   <!-- <td
                    class="border-b border-r border-customColor1 py-2 px-2 text-center text-sm"
                    id="audit-cost">
@@ -343,56 +286,52 @@
                     3402.00
                    </a>
                   </td> -->
-                  <td
-                   class="border-b border-r border-customColor1 py-2 px-2 text-center text-sm">
-                   <a class="inline-block py-2 px-6" id="total-cost-audit-cost">
-                    22302.00
-                   </a>
+                  <td class="border-b border-r border-customColor1 py-2 px-2 text-center text-sm">
+                    <a class="inline-block py-2 px-6" id="total-cost-audit-cost">
+                      22302.00
+                    </a>
                   </td>
-                 </tr>
-                 <tr>
-                  <td
-                   class="border-b border-l border-r border-customColor1 px-2 text-center text-sm"></td>
-                  <td
-                   class="border-b border-r border-customColor1 px-2 text-center text-sm">
-                   GRAND TOTAL
-                  </td>
-                  <td
-                   class="border-b border-r border-customColor1 px-2 text-center text-sm"></td>
-                  <!-- <td
+                  </tr>
+                  <tr>
+                    <td class="border-b border-l border-r border-customColor1 px-2 text-center text-sm"></td>
+                    <td class="border-b border-r border-customColor1 px-2 text-center text-sm">
+                      GRAND TOTAL
+                    </td>
+                    <td class="border-b border-r border-customColor1 px-2 text-center text-sm"></td>
+                    <!-- <td
                    class="border-b border-r border-customColor1 px-2 text-center text-sm"></td> -->
-                  <!-- <td
+                    <!-- <td
                    class="border-b border-r border-customColor1 px-2 text-center text-sm"></td>
                   <td
                    class="border-b border-r border-customColor1 px-2 text-center text-sm"></td>
                   <td
                    class="border-b border-r border-customColor1 px-2 text-center text-sm"></td> -->
-        
-                  <td
-                   class="border-b border-r border-customColor1 px-2 text-center text-sm">
-                   <a class="inline-block py-1 px-6" id="finalTotalCostOfAudit">
-                    22,302.00
-                   </a>
-                  </td>
-                 </tr>
+
+                    <td class="border-b border-r border-customColor1 px-2 text-center text-sm">
+                      <a class="inline-block py-1 px-6" id="finalTotalCostOfAudit">
+                        22,302.00
+                      </a>
+                    </td>
+                  </tr>
                 </tbody>
-               </table>
-              </div>
-             </div>
+              </table>
             </div>
           </div>
-       </div>
-
-       <!-- pay button  -->
-        <div class="flex justify-center items-center">
-          <a href="certificate.html" class="flex justify-center items-center w-full md:w-1/2">
-            <button
-            class="bg-customColor1 text-white font-semibold py-2 px-8 rounded-md inline-flex items-center w-full mx-4 my-3 md:my-0">
-            <span class="w-full">Pay Now</span>
-            </button>
-          </a>
         </div>
-        
-        
- </body>
+      </div>
+    </div>
+
+    <!-- pay button  -->
+    <div class="flex justify-center items-center">
+      <a href="certificate.html" class="flex justify-center items-center w-full md:w-1/2">
+        <button
+          class="bg-customColor1 text-white font-semibold py-2 px-8 rounded-md inline-flex items-center w-full mx-4 my-3 md:my-0">
+          <span class="w-full">Pay Now</span>
+        </button>
+      </a>
+    </div>
+
+
+</body>
+
 </html>
