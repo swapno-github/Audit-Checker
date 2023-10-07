@@ -1,4 +1,4 @@
-# WEBEL-Project [ Audit Checker ]
+# Audit Checker
 An Audit Management Portal, used for to register and monitor both new and existing Audit projects 
 
 
