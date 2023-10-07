@@ -1,5 +1,5 @@
 # Audit Checker
-An Audit Management Portal, used for to register and monitor both new and existing Audit projects 
+An Audit Management Portal, used for registering and monitoring the new and existing Audit requests from the Clients.
 
 
 #Login-Page
